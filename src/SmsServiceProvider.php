@@ -31,6 +31,8 @@ class SmsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // TODO: Implement register() method.
+        $this->app->singleton('sms', function ($app) {
+            return new SmsManager($app);
+        });
     }
 }

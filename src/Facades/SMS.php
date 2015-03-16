@@ -18,7 +18,7 @@ class SMS extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'namest.sms';
+        return 'sms';
     }
 
 }
